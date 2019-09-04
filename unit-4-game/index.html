@@ -1,59 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href="hexagons.css">
-  <title>E.beutler</title>
-</head>
-
-<body>
-
-
-  <h2>Math.random magical land game</h2>
-
-  <p>Every time you click the unicorn a magic number will appear:</p>
-
-  <button onclick="document.getElementById('demo').innerHTML = getRndInteger(9,12)">Click Me</button>
-
-  <script>
-
-    {
-      <p id="demo"></p>
-
-      function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min;
-        document.body.appendChild("#demo");
-
-      }
-    }
-    {
-      <p id="demoA"></p>
-
-      function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min;
-        document.body.appendChild("#demoA");
-      }
-      {
-        <p id="demoB"></p>
-
-        function getRndInteger(min, max) {
-          return Math.floor(Math.random() * (max - min)) + min;
-          document.body.appendChild("#demoB");
-        }
-      }
-      {
-        <p id="demoC"></p>
-        function getRndInteger(min, max) {
-          return Math.floor(Math.random() * (max - min)) + min;
-          document.body.appendChild("#demoC");
-        }
-
-
-      }
-
-  </script>
-</body>
-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <h1>Unicorn Collector Game!</h1>
+    Click the unicorns to get a number, win the game by getting the same number as display in your unicon powers.  
+    <h1> Your Unicorn Power is: <span id="number-to-guess"></span></h1>
+    <div class="">
+      <div class="">
+        <div class="">
+            <p> Your Total is: <span id="player-score"></span></p>
+          </div>
+      </div>
+      <div class="">
+        Wins<span id="wins"></span>
+      </div>
+      <div class="">
+        losses<span id="losses"></span>
+      </div>
+    </div>
+    <div id="crystals">
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/java/script.js"></script>
+  </body>
 </html>
